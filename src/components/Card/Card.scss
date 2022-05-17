@@ -1,4 +1,36 @@
 .card {
-  background-color: 1;
-  height: 30px;
+  background-color: azure;
+  border: 1px dashed black;
+  box-shadow: 10px 5px 5px rgb(204, 219, 225);
+  border-radius: 8px;
+  margin: 25px;
+  padding: 25px;
+  text-align: center;
+  padding: 5px;
+  &__name {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 22px;
+    background-color: powderblue;
+    border-radius: 6px;
+  }
+  &__pic {
+    height: 10%;
+    margin: 15px;
+  }
+  &__caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: steelblue;
+    height: 15px;
+    margin: 12px;
+  }
+  &__description {
+    // white-space: pre-wrap;
+    // overflow-wrap: break-word;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+  }
 }
