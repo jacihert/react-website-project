@@ -4,13 +4,12 @@ import FilterList from "../../components/FiltersList/FiltersList";
 import FilterItem from "../../components/FilterItem/FilterItem";
 import beers from "../../data/beers";
 
-const Navbar = () => {
+const Navbar = ({ searchTerm, handleInput }) => {
   return (
     <div className="navbar">
-      {/* <SearchBox /> */}
+      <SearchBox searchTerm={searchTerm} handleInput={handleInput} />
       {/* <FilterItem /> */}
       {/* <FilterList /> */}
-      {/* <FilterList filteredArr={} /> */}
     </div>
   );
 };

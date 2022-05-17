@@ -2,29 +2,30 @@ import "./SearchBox.scss";
 import React, { useState } from "react";
 import CardList from "../CardList/CardList";
 // import beers from "../../data/beers";
-
-const SearchBox = ({ beerList }) => {
-  const [searchTerm, setSearchTerm] = useState("");
-  const handleInput = (event) => {
-    console.log(event.target.value);
-    setSearchTerm(event.target.value);
-  };
-  const filteredBeers = beerList.filter((beer, index) =>
-    beer.name.includes(searchTerm)
-  );
+const SearchBox = ({ searchTerm, handleInput }) => {
+  // const SearchBox = ({ beerList }) => {
+  //   const [searchTerm, setSearchTerm] = useState("");
+  //   const handleInput = (event) => {
+  //     console.log(event.target.value);
+  //     setSearchTerm(event.target.value);
+  //   };
+  //   const filteredBeers = beerList.filter((beer, index) =>
+  //     beer.name.includes(searchTerm)
+  //   );
 
   // CASE SENSITIVE search
 
-  console.log(filteredBeers);
+  //   console.log(filteredBeers);
   return (
     <>
       <input
         className="searchBox"
         type="text"
+        placeholder="Search"
         value={searchTerm}
         onInput={handleInput}
       />
-      {searchTerm && <CardList beerList={filteredBeers} />}
+      {/* {searchTerm && <CardList beerList={filteredBeers} />} */}
     </>
   );
 };
