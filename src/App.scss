@@ -2,13 +2,6 @@
 
 .App {
   background-color: azure;
-  // height: 100%;
-  width: 100%;
   display: grid;
   grid-template-columns: 2fr 8fr;
 }
-
-// @media screen and (max-width: 480px) {
-//   grid-template-columns: 1fr;
-//   grid-template-columns: 1fr
-// }

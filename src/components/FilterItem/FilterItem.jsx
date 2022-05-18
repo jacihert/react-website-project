@@ -1,10 +1,16 @@
 import "./FilterItem.scss";
 
-const FilterItem = ({ filterValue }) => {
+const FilterItem = ({ filterValue, handleSelection }) => {
   return (
     <div>
-      <input type="checkbox" name="filter1" id="filter1" />
-      <label for="filter1">{filterValue}</label>
+      <input
+        type="checkbox"
+        name="filter"
+        id={filterValue}
+        value={filterValue}
+        onInput={handleSelection}
+      />
+      <label for="filter">{filterValue}</label>
     </div>
   );
 };

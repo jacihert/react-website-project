@@ -3,7 +3,6 @@ import React from "react";
 import Card from "../../components/Card/Card";
 
 const CardList = ({ beerList }) => {
-  console.log(`beers on card`, beerList);
   const cardJSX = beerList.map((beer, index) => (
     <Card
       name={beer.name}
