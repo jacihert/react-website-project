@@ -68,7 +68,7 @@ const App = () => {
   const searchedBeers = beers.filter((beer) => beer.name.includes(searchTerm));
 
   return (
-    <div className="App">
+    <div className="app">
       <Navbar
         searchTerm={searchTerm}
         handleInput={handleInput}

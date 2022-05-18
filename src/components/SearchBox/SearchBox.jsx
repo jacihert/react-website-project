@@ -3,7 +3,7 @@ import React from "react";
 
 const SearchBox = ({ searchTerm, handleInput }) => {
   return (
-    <>
+    <div>
       <input
         className="searchBox"
         type="text"
@@ -11,7 +11,7 @@ const SearchBox = ({ searchTerm, handleInput }) => {
         value={searchTerm}
         onInput={handleInput}
       />
-    </>
+    </div>
   );
 };
 
