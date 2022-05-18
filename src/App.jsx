@@ -65,7 +65,9 @@ const App = () => {
   const handleInput = (event) => {
     setSearchTerm(event.target.value);
   };
-  const searchedBeers = beers.filter((beer) => beer.name.includes(searchTerm));
+  const searchedBeers = beers.filter((beer) =>
+    beer.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="app">
