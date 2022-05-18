@@ -1,23 +1,15 @@
 import "./App.scss";
-import Navbar from "./containers/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import beers from "./data/beers";
 import React, { useState } from "react";
 import CardList from "./components/CardList/CardList";
 
 const App = () => {
-  console.log(`beers on app`, beers);
   const [searchTerm, setSearchTerm] = useState("");
   const handleInput = (event) => {
-    console.log(event.target.value);
     setSearchTerm(event.target.value);
   };
-  const filteredBeers = beers.filter((beer, index) =>
-    beer.name.includes(searchTerm)
-  );
-
-  // CASE SENSITIVE search
-
-  console.log(filteredBeers);
+  const filteredBeers = beers.filter((beer) => beer.name.includes(searchTerm));
 
   return (
     <div className="App">

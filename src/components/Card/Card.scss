@@ -8,12 +8,11 @@
   text-align: center;
   padding: 5px;
   &__name {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: Impact, "Arial Narrow Bold", sans-serif;
     font-size: 22px;
     background-color: powderblue;
     border-radius: 6px;
     text-align: left;
-    // align-items: baseline;
   }
   &__container {
     display: flex;
@@ -35,10 +34,6 @@
     text-align: right;
   }
   &--description {
-    // white-space: pre-wrap;
-    // overflow-wrap: break-word;
-    // flex-direction: row;
-    // flex-wrap: wrap;
     font-family: "Courier New", Courier, monospace;
     font-size: 11px;
   }

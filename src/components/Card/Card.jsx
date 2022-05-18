@@ -1,5 +1,4 @@
 import React from "react";
-// import beers from "../../data/beers";
 import "./Card.scss";
 
 const Card = ({ name, image, description, caption }) => {
@@ -16,5 +15,3 @@ const Card = ({ name, image, description, caption }) => {
 };
 
 export default Card;
-
-//beers.name, Image, tagline, description

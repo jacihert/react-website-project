@@ -1,7 +1,7 @@
 import "./SearchBox.scss";
 import React, { useState } from "react";
 import CardList from "../CardList/CardList";
-// import beers from "../../data/beers";
+
 const SearchBox = ({ searchTerm, handleInput }) => {
   // const SearchBox = ({ beerList }) => {
   //   const [searchTerm, setSearchTerm] = useState("");

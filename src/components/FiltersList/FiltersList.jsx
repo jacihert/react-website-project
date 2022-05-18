@@ -1,19 +1,14 @@
-// import React from "react";
-// import "./FiltersList.scss";
+import React from "react";
+import "./FiltersList.scss";
+import FilterItem from "../FilterItem/FilterItem";
 
-// const FilterList = () => {
-//   //   console.log(filteredArr);
-//   // const filteredListJSX = filteredArr.map((beer) => <p>{beer.name}</p>);
-//   // return <div> {filteredListJSX} </div>;
-//   return (
-//     <>
-//       <p> High Acidity </p>
-//       <p> High Alcohol </p>
-//       <p> Classic Range </p>
-//       {/* <div> {filteredListJSX} </div>; */}
-//     </>
-//   );
+const FiltersList = () => {
+  const filters = ["High Acidity", "High Alcohol", "Classic Range"];
 
-//   // </div>
-// };
-// export default FilterList;
+  const filterJSX = filters.map((filter) => (
+    <FilterItem filterValue={filter} />
+  ));
+
+  return <div> {filterJSX}</div>;
+};
+export default FiltersList;
