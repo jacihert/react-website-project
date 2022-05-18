@@ -19,15 +19,7 @@ const App = () => {
   const getBeers = async (highAcidity, highAlcohol, classicRange) => {
     let queryParameter = "";
     let url = "";
-    if (highAcidity) {
-      queryParameter += "ph_lt=4";
-    }
-
     if (highAlcohol) {
-      if (queryParameter) {
-        queryParameter += "&";
-      }
-
       queryParameter += "abv_gt=6";
     }
     if (classicRange) {
@@ -69,6 +61,10 @@ const App = () => {
     beer.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const filteredBeers = beers.filter((beer) => beer.ph < 4);
+
+  const searchedFilteredBeers = searchedBeers.filter((beer) => beer.ph < 4);
+
   return (
     <div className="app">
       <Navbar
@@ -77,8 +73,13 @@ const App = () => {
         handleSelection={handleSelection}
       />
 
-      {!searchTerm && <CardList beerList={beers} />}
-      {searchTerm && <CardList beerList={searchedBeers} />}
+      {!searchTerm && !highAcidity && <CardList beerList={beers} />}
+      {!searchTerm && highAcidity && <CardList beerList={filteredBeers} />}
+
+      {searchTerm && !highAcidity && <CardList beerList={searchedBeers} />}
+      {searchTerm && highAcidity && (
+        <CardList beerList={searchedFilteredBeers} />
+      )}
     </div>
   );
 };
