@@ -54,9 +54,11 @@ const App = () => {
       setClassicRange(event.target.checked);
     }
   };
+
   const handleInput = (event) => {
     setSearchTerm(event.target.value);
   };
+  
   const searchedBeers = beers.filter((beer) =>
     beer.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
