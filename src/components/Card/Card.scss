@@ -1,17 +1,18 @@
+@use "../../assets/sass/variables" as *;
 .card {
-  background-color: azure;
+  background-color: $primary-color;
   border: 1px dashed black;
   box-shadow: 10px 5px 5px rgb(204, 219, 225);
   border-radius: 8px;
   margin: 8px;
-  padding: 25px;
   text-align: center;
   padding: 5px;
   &__name {
-    font-family: Impact, "Arial Narrow Bold", sans-serif;
-    font-size: 22px;
-    background-color: powderblue;
-    height: 55px;
+    font-family: $font-family_name;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: $secondary-color;
+    height: 50px;
     border-radius: 6px;
     text-align: left;
   }
@@ -26,16 +27,23 @@
     margin: 15px;
   }
   &__caption {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+    font-family: $font-family_caption;
+    // font-style: italic;
     font-size: 14px;
-    color: steelblue;
+    color: $color-captionFont;
     height: 15px;
     margin: 12px;
     text-align: right;
   }
   &--description {
-    font-family: "Courier New", Courier, monospace;
+    font-family: $font-family_description;
     font-size: 11px;
+  }
+  &__button {
+    background-color: $color-button;
+    height: 20px;
+    width: 100px;
+    border: 1px white solid;
+    border-radius: 25px;
   }
 }

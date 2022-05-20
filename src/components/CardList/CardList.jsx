@@ -9,6 +9,8 @@ const CardList = ({ beerList }) => {
       image={beer.image_url}
       description={beer.description}
       caption={beer.tagline}
+      beerList={beerList}
+      beerId={beer.id}
       key={index}
     />
   ));

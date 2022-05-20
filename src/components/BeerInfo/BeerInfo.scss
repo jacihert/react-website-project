@@ -1,0 +1,9 @@
+@use "../../assets/sass/variables" as *;
+
+.characteristics {
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  text-align: left;
+  font-family: $font-family_details;
+}

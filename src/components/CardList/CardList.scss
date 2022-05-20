@@ -1,5 +1,6 @@
+@use "../../assets/sass/variables" as *;
 .list {
-  border: 1px solid azure;
+  border: 1px solid $primary-color;
   display: grid;
   grid-template-columns: 1fr;
 }
