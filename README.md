@@ -1,14 +1,14 @@
-React Project - A website on 'Beers'
+# React Project - A website on 'Beers'
 
-![image](https://user-images.githubusercontent.com/102464820/173901297-a181616b-54af-4103-9021-fdd6031fabdb.png)
+## Cheers with Beers !
+
+![image](https://user-images.githubusercontent.com/102464820/173901908-9045ee31-c9de-455c-8c0c-cc56ddaf023b.png)
 
 
-HighLights :
 
-- Browse the various Beers and their facts
 
-- Search for your favourite Beer using the search box
-
-- Filter beers based on the acidic / alcohol content or the classic range
-
-- Responsive Layout
+> ### HighLights
+- Browse through verious Beers and their facts
+- Search for your favourite Beer using the search
+- Filter beers based on the acidic / alcohol content or based on the classic range
+- Responsive Layout - supports different device screens
