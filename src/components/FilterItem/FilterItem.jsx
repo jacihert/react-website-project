@@ -10,7 +10,7 @@ const FilterItem = ({ filterValue, handleSelection }) => {
         value={filterValue}
         onInput={handleSelection}
       />
-      <label for="filter">{filterValue}</label>
+      <label htmlFor="filter">{filterValue}</label>
     </div>
   );
 };

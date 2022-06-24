@@ -8,7 +8,6 @@ const Card = ({ name, image, description, caption, beerList, beerId }) => {
   const handleClick = (event) => {
     setShowDetails(!showDetails);
   };
-  console.log(beerId);
   const detailsJSX = <BeerInfo beerList={beerList} beerId={beerId} />;
   const buttonJSX = (
     <button className="card__button" onClick={handleClick}>
@@ -22,7 +21,10 @@ const Card = ({ name, image, description, caption, beerList, beerId }) => {
       <div className="card__caption">{caption}</div>
       <div className="card__container">
         <img className="card--pic" src={image} alt={name + "Image"} />
-        <div className="card--description">{description}</div>
+        <div className="card--description">
+          {description.split(".")[0]}
+          {" ... "}
+        </div>
       </div>
       {showDetails ? detailsJSX : buttonJSX}
     </div>

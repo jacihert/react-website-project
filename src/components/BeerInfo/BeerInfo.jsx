@@ -54,16 +54,25 @@ const BeerInfo = ({ beerList, beerId }) => {
         </p>
         <p>
           {"Methods : "}
-          {JSON.stringify(beer.method.mash_temp.duration)}
-          {/* {beer.method.mash_temp.temp.value} */}
+          {"Mash Temp : "}
+          {/* {beer.method.mash_temp.temp.value}{" "}
+          {beer.method.mash_temp.temp.unit}{" "}
+          {beer.method.mash_temp[temp].duration} */}
+          {"Fermentation : "} {beer.method.fermentation.temp.value}{" "}
+          {beer.method.fermentation.temp.unit}
+          {"Twist : "} {beer.method.twist}
         </p>
 
-        {/* methods */}
-        {/* ingredients */}
+        <p>
+          {"Ingredients : "}
+          {"Malt : "}
+          {"Hops : "}
+          {"Yeast : "} {beer.ingredients.yeast}
+        </p>
 
         <p>
           {"Food Pairing : "}
-          {beer.food_pairing}
+          {beer.food_pairing.join(", ")}
         </p>
         <p>
           {"Brewer Tips : "}
