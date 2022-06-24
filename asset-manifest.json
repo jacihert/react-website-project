@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-website-project/static/css/main.f02e9dc3.css",
+    "main.js": "/react-website-project/static/js/main.0b047848.js",
+    "static/js/787.51685913.chunk.js": "/react-website-project/static/js/787.51685913.chunk.js",
+    "static/media/beer.png": "/react-website-project/static/media/beer.2675cdeb59b218692ed7.png",
+    "index.html": "/react-website-project/index.html",
+    "main.f02e9dc3.css.map": "/react-website-project/static/css/main.f02e9dc3.css.map",
+    "main.0b047848.js.map": "/react-website-project/static/js/main.0b047848.js.map",
+    "787.51685913.chunk.js.map": "/react-website-project/static/js/787.51685913.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f02e9dc3.css",
+    "static/js/main.0b047848.js"
+  ]
+}
