@@ -1,6 +1,5 @@
-# React Project - A website on 'Beers'
-
-## Cheers with Beers !  
+# Project - A website on 'Beers' : Cheers with Beers ! 
+##  @React Website created based on the Punk API
  [click here to check it out](https://jacihert.github.io/react-website-project/)
  
 ![image](https://user-images.githubusercontent.com/102464820/173901908-9045ee31-c9de-455c-8c0c-cc56ddaf023b.png)
